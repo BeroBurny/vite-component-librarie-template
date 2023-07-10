@@ -6248,7 +6248,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:8":
+"eslint@npm:^8":
   version: 8.44.0
   resolution: "eslint@npm:8.44.0"
   dependencies:
@@ -11120,7 +11120,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": latest
     "@typescript-eslint/parser": latest
     "@vitejs/plugin-react": ^4.0.0
-    eslint: 8
+    eslint: ^8
     eslint-config-prettier: ^8.8.0
     eslint-plugin-prettier: ^4.2.1
     eslint-plugin-react: latest
