@@ -47,7 +47,7 @@ jobs:
         run: |
           echo npmAuthToken: "$NODE_AUTH_TOKEN" >> ./.yarnrc.yml
           
-      - run: yarn workspaces foreach -v --exclude root --no-private npm publish --tolerate-republish --access public
+      - run: yarn npm publish --tolerate-republish --access public
         if: ${{ steps.release.outputs.releases_created }}
 
   page:
@@ -69,7 +69,7 @@ jobs:
           with:
             apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
             accountId: 2238a825c5aca59233eab1f221f7aefb
-            projectName: "projectName"
+            projectName: "matejaweb"
             directory: ./storybook-static
             gitHubToken: ${{ secrets.GITHUB_TOKEN }}
             branch: ${{ github.head_ref || github.ref_name }}
