@@ -7,7 +7,6 @@ The release process is implemented on Cloudflare with the help of release-please
 
 Before usage, you should:
  - change name in *package.json*
- - add GITHUB_TOKEN, NPM_TOKEN, CLOUDFLARE_API_TOKEN in GitHub secrets
+ - add NPM_TOKEN and CLOUDFLARE_API_TOKEN in GitHub secrets
  - change *projectName* of *page* in *cd.yaml*
- - change trigger branches in *cd.yaml* and *ci.yaml*
  - ensure that the version in *.release-please-manifest.json* is the same as in *package.json*

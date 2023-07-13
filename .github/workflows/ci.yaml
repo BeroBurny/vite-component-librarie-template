@@ -41,6 +41,7 @@ jobs:
   #test
   test:
     name: Test
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -54,6 +55,7 @@ jobs:
       - run: yarn run test
   #docs
   docs:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
